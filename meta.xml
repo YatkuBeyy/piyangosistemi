@@ -1,0 +1,4 @@
+<meta>
+	<info author="YatkuBey/Axis" type="script" name="piyangosistemi" />
+	<script src="server.lua" type="server" />
+</meta>
