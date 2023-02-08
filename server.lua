@@ -17,12 +17,14 @@ function piyangoAres(oyuncu, thePlayer, thePrice)
     local name = getPlayerName(oyuncu)
     myCode = getRandomKey()
     if isElementWithinColShape(oyuncu, piyangokordinat) then 
+       -- if export.arp_global:formatMoney(oyuncu, 50000) then 
         takePlayerMoney(oyuncu, 50000)-- freeroam para çekme
         -- exports.arp_global:getMoney(oyuncu, 50000) roleplay para çekme
         outputChatBox("#00f7ff[Piyango YatkuBey] : #ffffffBaşarılı bir şekilde piyango satın aldın!", oyuncu,255,255,255, true)
         outputChatBox("#00f7ff[Piyango YatkuBey] : #ffffffPiyango kodun : "..myCode.."!", oyuncu,255,255,255, true)
     else
         outputChatBox("#00f7ff[Piyango YatkuBey] : #ffffffPiyango sistemi için geçerli bölgede değilsin!", oyuncu,255,255,255, true)
+      -- end
     end
 end 
 addCommandHandler("piyangoal", piyangoAres)
